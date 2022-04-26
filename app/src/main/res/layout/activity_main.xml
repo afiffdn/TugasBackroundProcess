@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handler"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_handler"
+        android:text="Button Handler"
+        app:layout_constraintStart_toStartOf="@id/tv_handler"
+        app:layout_constraintTop_toBottomOf="@id/tv_handler"
+        app:layout_constraintEnd_toEndOf="@id/tv_handler"/>
+    <TextView
+        android:id="@+id/tv_asyntask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asyntask"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_handler"
+        app:layout_constraintRight_toRightOf="@id/btn_handler"
+        app:layout_constraintTop_toBottomOf="@id/btn_handler" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_asyntask"
+        android:text="Button Asyntask"
+        app:layout_constraintStart_toStartOf="@id/tv_asyntask"
+        app:layout_constraintTop_toBottomOf="@id/tv_asyntask"
+        app:layout_constraintEnd_toEndOf="@id/tv_asyntask"/>
+
+    <TextView
+        android:id="@+id/tv_coroutines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coroutines"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_asyntask"
+        app:layout_constraintRight_toRightOf="@id/btn_asyntask"
+        app:layout_constraintTop_toBottomOf="@id/btn_asyntask" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_coroutines"
+        android:text="Button Coroutines"
+        app:layout_constraintStart_toStartOf="@id/tv_coroutines"
+        app:layout_constraintTop_toBottomOf="@id/tv_coroutines"
+        app:layout_constraintEnd_toEndOf="@id/tv_coroutines"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
